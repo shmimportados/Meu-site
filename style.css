@@ -198,7 +198,7 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 800px;
 
     display: flex;
     align-items: center;
@@ -814,6 +814,16 @@ body {
 
     .hero-title {
         font-size: 36px;
+    }
+    .hero{
+    
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        
+        background-image: url(hero.img.png);
+
+    
     }
 
     .hero-typing {

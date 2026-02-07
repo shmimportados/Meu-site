@@ -38,12 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Mobile Menu Toggle
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
 });
 
 // Close mobile menu when clicking on a link
