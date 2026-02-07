@@ -198,13 +198,13 @@ body {
 
 /* Hero Section */
 .hero {
+    background-image: url(ChatGPT\ Image\ 31\ de\ jan.\ de\ 2026\,\ 09_43_58.png);
     min-height: 800px;
-
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url(ChatGPT\ Image\ 31\ de\ jan.\ de\ 2026\,\ 09_43_58.png);
+    background-color: var(--dark-bg);
     overflow: hidden;
 }
 
@@ -226,8 +226,8 @@ body {
 .hero-subtitle {
     font-size: 24px;
     font-weight: 300;
-    color: var(--text-gray);
-    margin-bottom: 20px;
+    color: var(--primary-color);
+    margin-bottom: 70px;
 }
 
 .hero-title {
@@ -299,6 +299,12 @@ body {
 
 .about-image-wrapper {
     position: relative;
+}
+.about-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .about-image-bg {
@@ -704,6 +710,13 @@ body {
     transition: var(--transition);
     border: 1px solid var(--border-color);
 }
+a{
+    color: white;
+    text-decoration: none;
+
+
+}
+
 
 .social-link:hover {
     background-color: var(--primary-color);
@@ -816,14 +829,11 @@ body {
         font-size: 36px;
     }
     .hero{
-    
-        height: 600px;
-        background-size: cover;
-        background-position: center;
         
         background-image: url(hero.img.png);
+        background-size: cover;
+        background-position: center;
 
-    
     }
 
     .hero-typing {

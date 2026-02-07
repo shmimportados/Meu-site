@@ -1,139 +1,388 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sergio - Portfólio Pessoal</title>
-
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-    <!-- Fonte -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio - Portfolio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-wrapper">
-
-                <a href="#home" class="logo">Sergio<span>.</span></a>
-
-                <!-- MENU -->
+                <a href="#" class="logo">Sergio<span>.</span></a>
+                
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">Sobre</a></li>
                     <li><a href="#services" class="nav-link">Serviços</a></li>
                     <li><a href="#resume" class="nav-link">Currículo</a></li>
                     <li><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
 
-                <!-- BOTÃO HAMBÚRGUER (mobile) -->
                 <div class="hamburger" id="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-
             </div>
         </div>
     </nav>
 
-
-    <!-- ================= HERO ================= -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h3 class="hero-subtitle">Bem-vindo</h3>
-            <h1 class="hero-title">
-                Eu sou <span class="text-primary">Sergio Henrique</span>
-            </h1>
-            <a href="#contact" class="btn btn-primary">Contrate-me</a>
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="section-padding">
-        <div class="container about-grid">
-
-            <div>
-                <img src="493684763_3042903485890515_1534384669090600107_n.jpg" alt="Perfil" />
-            </div>
-
-            <div>
-                <h2>Sobre Mim</h2>
-                <p>
-                    Sou desenvolvedor web focado em criar sites rápidos, modernos e totalmente responsivos para empresas e projetos pessoais.
-                </p>
-                <p>Email: sergio11364180@gmail.com</p>
-                <p>Telefone: +55 31 99917‑5546</p>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ================= SERVIÇOS ================= -->
-    <section id="services" class="section-padding">
+        <div class="hero-bg"></div>
         <div class="container">
-            <h2 style="text-align:center; margin-bottom:40px;">Serviços</h2>
-
-            <div class="services-grid">
-                <div class="service-card">Web Design</div>
-                <div class="service-card">Front-end</div>
-                <div class="service-card">Back-end</div>
-                <div class="service-card">Apps Mobile</div>
-                <div class="service-card">SEO</div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ================= CONTATO ================= -->
-    <section id="contact" class="section-padding">
-        <div class="container contact-grid">
-
-            <div>
-                <h2>Contato</h2>
-                <p>Fale comigo pelo WhatsApp ou email.</p>
-            </div>
-
-            <form class="contact-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Seu nome" class="form-input" />
-                    <input type="email" placeholder="Seu email" class="form-input" />
+            <div class="hero-content">
+                <h3 class="hero-subtitle">Bem-vindo</h3>
+                <h1 class="hero-title">
+                    Eu sou <span class="text-primary">Sergio Henrique</span>
+                </h1>
+                <div class="hero-typing">
+                    Eu sou <span id="typing-text" class="typing-text"></span>
                 </div>
-                <textarea placeholder="Mensagem" class="form-textarea"></textarea>
-                <button class="btn btn-primary" type="submit">Enviar</button>
-            </form>
+                
+                <a href="#contact" class="btn btn-primary">Contrate-me</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image-bg"></div>
+                    <img src="493684763_3042903485890515_1534384669090600107_n.jpg">
+                    <div class="experience-badge">
+                        <div class="experience-number">2+</div>
+                        <div class="experience-text">Anos de Experiência</div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h3 class="about-title">
+                        Eu sou <span class="text-primary">Sergio Henrique</span>, Desenvolvedor Web
+                    </h3>
+                    <p class="about-text">
+                        Ajudo você a construir a marca para o seu negócio a um preço acessível. Milhares de clientes obtiveram resultados excepcionais trabalhando com nossa equipe dedicada.
+                    </p>
+                    <p class="about-text">
+                        Entregar trabalho dentro do prazo e orçamento que atende aos requisitos do cliente é nosso lema. Lorem Ipsum tem sido o padrão da indústria desde sempre.
+                    </p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Nome:</span>
+                            <span class="info-value">Sergio Henrique</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">sergio11364180@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Idade:</span>
+                            <span class="info-value">41 Anos</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">De:</span>
+                            <span class="info-value">Ribeirao das neves</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-outline">Download CV</a>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section id="services" class="services section-padding bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Que Eu Faço</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Ofereço serviços completos para ajudar seu negócio a crescer online</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Design Gráfico</h3>
+                    <p class="service-text">Identidade visual, redes sociais e materiais digitais criados para destacar sua marca com profissionalismo e criatividade.</p>
+                </div>
 
-    <!-- ================= FOOTER ================= -->
-    <footer style="text-align:center; padding:20px 0; background:#111;">
-        © 2024 Sergio Henrique
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="service-title">Web Design</h3>
+                    <p class="service-text">Criação de sites modernos, responsivos e otimizados para performance e experiência do usuário.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-text">Interfaces modernas, intuitivas e focadas na melhor experiência do usuário.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">App Design & Dev</h3>
+                    <p class="service-text">Apps modernos, intuitivos e performáticos, desenvolvidos do design à implementação.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Análise de Negócios</h3>
+                    <p class="service-text">Estudo de processos, dados e estratégias para otimizar decisões e gerar melhores resultados.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="service-title">Marketing SEO</h3>
+                    <p class="service-text">Otimização de sites para melhorar posicionamento no Google, atrair tráfego e gerar mais clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Currículo</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="resume-grid">
+                <!-- Education -->
+                <div class="resume-column">
+                    <h3 class="resume-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Educação
+                    </h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2023 - 2026</span>
+                                <h4 class="timeline-title">Analista de redes</h4>
+                                <p class="timeline-place">pitágoras</p>
+                                <p class="timeline-text">Gestão de redes, servidores e automações com foco em desempenho, segurança e eficiência.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">200 - 2008</span>
+                                <h4 class="timeline-title">pós graduação</h4>
+                                <p class="timeline-place">pitágoras</p>
+                                <p class="timeline-text">Engenharia de Software</p>
+                            </div>
+                        </div>
+
+                        
+
+                <!-- Experience -->
+                <div class="resume-column">
+                    <h3 class="resume-title">
+                        <i class="fas fa-briefcase"></i>
+                        Experiência
+                    </h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2012 - 2013</span>
+                                <h4 class="timeline-title">DevOps</h4>
+                                
+                                <p class="timeline-text">Automação, deploy contínuo e infraestrutura em nuvem para aplicações rápidas e confiáveis.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2014 - 2016</span>
+                                <h4 class="timeline-title">back-end.</h4>
+                                
+                                <p class="timeline-text">APIs, bancos de dados e lógica de sistemas com foco em performance, segurança e escalabilidade.</p>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            
+                            <div class="skill-progress" data-width="40"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">30%</span>
+                        </div>
+                        
+
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Depoimentos</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="Client" class="testimonial-img">
+                    <h4 class="testimonial-name">Dennis Jacques</h4>
+                    <p class="testimonial-role">Usuário dos EUA</p>
+                    <p class="testimonial-text">"Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text."</p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="Client" class="testimonial-img">
+                    <h4 class="testimonial-name">Jay Shah</h4>
+                    <p class="testimonial-role">Fundador na Icomatic</p>
+                    <p class="testimonial-text">"Easy to use, reasonably priced simply dummy text of the printing and typesetting industry."</p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Client" class="testimonial-img">
+                    <h4 class="testimonial-name">Patrick Cary</h4>
+                    <p class="testimonial-role">Freelancer dos EUA</p>
+                    <p class="testimonial-text">"I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et."</p>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-title">Vamos conversar</h3>
+                    <p class="contact-text">Estou disponível para projetos freelance. Entre em contato comigo para discutirmos suas ideias.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Ribeirão das Neves, Minas Gerais</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>sergio11364180@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (31) 999175546</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/shmimportados" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sergio-henrique-9b89a21b8/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/webshm?igsh=MWk1bTM0YnVmbmFoeg==" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Seu Nome" class="form-input">
+                        <input type="email" placeholder="Seu Email" class="form-input">
+                    </div>
+                    <input type="text" placeholder="Assunto" class="form-input">
+                    <textarea placeholder="Sua Mensagem" class="form-textarea"></textarea>
+                    <button  type="submit" class="btn btn-primary btn-full"><a href="https://w.app/taq2r3">WhATSAPP</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Copyright © 2024 <span>sergio</span>. Todos os direitos reservados.
+            </p>
+        </div>
     </footer>
 
-
-    <!-- ================= SCRIPT MENU MOBILE ================= -->
-    <script>
-        const hamburger = document.getElementById("hamburger");
-        const navMenu = document.getElementById("navMenu");
-
-        hamburger.addEventListener("click", () => {
-            navMenu.classList.toggle("active");
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
